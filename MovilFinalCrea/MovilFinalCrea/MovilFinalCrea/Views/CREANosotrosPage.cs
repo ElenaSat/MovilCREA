@@ -111,8 +111,8 @@ namespace MovilFinalCrea.Views
 
         public async void BtnValores_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NavigationPage(new CREAPrincipalPage()));
-            Navigation.RemovePage(this);
+            await App.Current.MainPage.Navigation.PushAsync(new CREAPrincipalPage());
+            App.Current.MainPage.Navigation.RemovePage(this);
         }
     }
 }

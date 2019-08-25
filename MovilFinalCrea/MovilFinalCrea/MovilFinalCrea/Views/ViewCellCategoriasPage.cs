@@ -24,11 +24,10 @@ namespace MovilFinalCrea.Views
                 Spacing = 0,
             };
 
-
             Label LbDescripcion = new Label
             {
                 Text = "",
-                FontSize = 12,
+                FontSize = 20,
                 FontAttributes = FontAttributes.Bold
             };
 
@@ -36,7 +35,8 @@ namespace MovilFinalCrea.Views
             {
                 Text = "",
                 FontSize = 12,
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
+                IsVisible=false// Me oculta el id
             };
 
             LbDescripcion.SetBinding(Label.TextProperty, new Binding("Descripcion"));
